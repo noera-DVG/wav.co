@@ -16,7 +16,7 @@ WAV.co is a native macOS music production assistant built with Tauri (Rust + Rea
 
 **No coding needed! Download the pre-built app:**
 
-1. **Download:** [WAV.co-v1.0.0.zip](https://github.com/noera-DVG/wav.co/releases/download/v1.0.0/WAV.co-v1.0.0.zip)
+1. **Download:** [WAV.co-v1.0.0.zip](https://github.com/noera-DVG/wav.co/releases/download/v1.0.0/WAV.co-v1.0.0.zip) (3.6 MB pre-built app)
 2. **Extract:** Double-click the ZIP file
 3. **Install:** Drag `WAV.co.app` to your Applications folder
 
