@@ -10,89 +10,33 @@ WAV.co is a native macOS music production assistant built with Tauri (Rust + Rea
 
 ---
 
-## 🚀 Getting Started - 3 Easy Steps
+## 🚀 Getting Started
 
-### Option 1: Pre-built App (Easiest - Recommended!)
+### ⚡ One-Click Installation (Easiest!)
 
-**No coding needed. Download and go!**
+**No coding needed! Download the pre-built app:**
 
-1. **Download WAV.co-v1.0.0.zip** from [Releases](https://github.com/noera-DVG/wav.co/releases)
-2. **Double-click** the ZIP file to extract
-3. **Drag `WAV.co.app`** to your Applications folder
+1. **Download:** [WAV.co-v1.0.0.zip](https://github.com/noera-DVG/wav.co/releases/download/v1.0.0/WAV.co-v1.0.0.zip)
+2. **Extract:** Double-click the ZIP file
+3. **Install:** Drag `WAV.co.app` to your Applications folder
 
-That's it! Double-click to open and start producing.
+> 💡 **First-time warning?** Right-click `WAV.co.app` → **Open**
 
-> 💡 **First-time open warning?** Right-click `WAV.co.app` → **Open** → Click **Open**
+### 📖 Documentation
 
-### Option 2: Build from Source (For Developers)
+| Document | Purpose |
+|----------|---------|
+| [QUICK-START.md](./QUICK-START.md) | Fast setup guide (3 steps) |
+| [INSTALLATION.md](./INSTALLATION.md) | Detailed installation + Ableton integration |
+| [RELEASES.md](./RELEASES.md) | Download links for pre-built apps |
+
+### 🔧 Build from Source (For Developers)
 
 ```bash
 brew install rustup node
 rustup-init && source "$HOME/.cargo/env"
 git clone https://github.com/noera-DVG/wav.co.git && cd wav.co
 npm install && npm run tauri build
-```
-
----
-
-## 📦 Installation Guide (Detailed)
-
-### macOS
-
-1. **Download** [WAV.co-v1.0.0.zip](https://github.com/noera-DVG/wav.co/releases/download/v1.0.0/WAV.co-v1.0.0.zip)
-2. **Extract** the ZIP (double-click)
-3. **Move** `WAV.co.app` to Applications
-4. **Open** from Applications
-
-> ⚠️ **Security warning?** This is normal for unsigned apps. Right-click → Open
-
----
-
-## 🎹 Ableton Live Integration Guide
-
-### Prerequisites
-- Ableton Live 11+
-- Python 3 (pre-installed on macOS)
-
-### Step-by-Step Setup
-
-#### 1. Locate Ableton's User Library
-```
-~/Music/Ableton/User Library/Remote Scripts/
-```
-
-#### 2. Create WAV.co Folder
-Create a new folder named exactly `WAV.co` in the Remote Scripts directory
-
-#### 3. Copy Bridge Script
-Download `wavco_bridge.py` from [src-tauri/resources/bridge/](https://github.com/noera-DVG/wav.co/tree/main/src-tauri/resources/bridge) and place it in your `WAV.co` folder
-
-#### 4. Configure Ableton
-1. Restart Ableton Live
-2. Preferences → Link/MIDI/Sync
-3. Control Surfaces → Select **WAV.co**
-4. Click OK
-
-#### 5. Connect
-1. Launch WAV.co app
-2. Click **Connect** in sidebar
-3. You should see: ✅ **Connected to Ableton Live**
-
----
-
-## 🔧 Development
-
-### Prerequisites
-```bash
-brew install rustup node
-rustup-init && source "$HOME/.cargo/env"
-```
-
-### Build & Run
-```bash
-git clone https://github.com/noera-DVG/wav.co.git && cd wav.co
-npm install && npm run tauri dev  # Development
-npm run tauri build               # Production build
 ```
 
 ---
@@ -108,15 +52,29 @@ npm run tauri build               # Production build
 
 ---
 
+## 🎹 Ableton Live Integration
+
+WAV.co connects to Ableton Live via WebSocket for seamless workflow.
+
+**Quick Setup:**
+1. Copy `wavco_bridge.py` to `Remote Scripts/WAV.co/`
+2. Restart Ableton and select WAV.co in Control Surfaces
+3. Click Connect in WAV.co app
+
+**Detailed Instructions:** See [INSTALLATION.md](./INSTALLATION.md)
+
+---
+
 ## 📂 Repository Structure
 
 ```
 WAV.co/
 ├── src-tauri/          # Rust backend
 ├── src/                # React frontend
-├── releases/           # Pre-built apps
-│   └── WAV.co.app/
-└── INSTALLATION.md     # Detailed installation guide
+├── QUICK-START.md      # Fast setup guide
+├── INSTALLATION.md     # Detailed installation guide
+├── RELEASES.md         # Download links
+└── README.md           # This file
 ```
 
 ---
@@ -129,11 +87,10 @@ Copyright (c) 2026 WAV.co
 
 ---
 
-## 📚 Additional Resources
+## 📬 Support & Feedback
 
-- **Detailed Installation:** See [INSTALLATION.md](INSTALLATION.md)
-- **Troubleshooting:** Check the Ableton Bridge section
-- **Report Issues:** [GitHub Issues](https://github.com/noera-DVG/wav.co/issues)
+- [Report Issues](https://github.com/noera-DVG/wav.co/issues)
+- Check the Ableton Bridge troubleshooting section in [INSTALLATION.md](./INSTALLATION.md)
 
 ---
 
