@@ -1,0 +1,79 @@
+[
+  {
+    "id": "ph-template-1",
+    "name": "Progressive House — Full Arrangement",
+    "genre": "Progressive House",
+    "bpm": 124,
+    "key": "Am",
+    "structure": ["Intro (16 bars)", "Build 1 (16 bars)", "Breakdown 1 (16 bars)", "Build 2 (16 bars)", "Drop 1 (32 bars)", "Break 1 (16 bars)", "Build 3 (16 bars)", "Drop 2 (32 bars)", "Outro (16 bars)"],
+    "tracks": [
+      { "name": "Lead", "chainId": "ph-synth-3" },
+      { "name": "Bass", "chainId": "ph-synth-2" },
+      { "name": "Drums", "chainId": null },
+      { "name": "Pads", "chainId": "ph-synth-1" },
+      { "name": "FX", "chainId": null },
+      { "name": "Vocals", "chainId": null },
+      { "name": "Master", "chainId": null }
+    ],
+    "description": "Complete progressive house arrangement template with full structure",
+    "notes": [
+      "Start with minimal elements in intro",
+      "Build energy gradually through each section",
+      "Use filter automation for movement",
+      "Keep the drop focused — less is more",
+      "Add variation in second drop"
+    ]
+  },
+  {
+    "id": "tr-template-1",
+    "name": "Trance — Uplift",
+    "genre": "Trance",
+    "bpm": 138,
+    "key": "Gm",
+    "structure": ["Intro (32 bars)", "Build 1 (16 bars)", "Breakdown 1 (32 bars)", "Build 2 (16 bars)", "Lead Drop (32 bars)", "Break 1 (16 bars)", "Build 3 (16 bars)", "Final Drop (48 bars)", "Outro (32 bars)"],
+    "tracks": [
+      { "name": "Lead", "chainId": "tr-synth-1" },
+      { "name": "Bass", "chainId": "tr-synth-4" },
+      { "name": "Arp", "chainId": "tr-synth-5" },
+      { "name": "Drums", "chainId": null },
+      { "name": "Pads", "chainId": "tr-synth-3" },
+      { "name": "FX", "chainId": null },
+      { "name": "Vocals", "chainId": null },
+      { "name": "Master", "chainId": null }
+    ],
+    "description": "Uplifting trance template with emotional breakdowns and euphoric drops",
+    "notes": [
+      "Use major chords for uplifting feel",
+      "Breakdown should be emotional and spacious",
+      "Lead drop needs maximum energy",
+      "Final drop should be the biggest moment",
+      "Include vocal elements for emotion"
+    ]
+  },
+  {
+    "id": "tk-template-1",
+    "name": "Techno — Dark Loop",
+    "genre": "Techno",
+    "bpm": 132,
+    "key": "Bm",
+    "structure": ["16-bar loop with variation layers"],
+    "tracks": [
+      { "name": "Kick", "chainId": null },
+      { "name": "Hi-hats", "chainId": null },
+      { "name": "Percussion", "chainId": null },
+      { "name": "Bass", "chainId": "tk-synth-2" },
+      { "name": "Lead", "chainId": "tk-synth-1" },
+      { "name": "FX", "chainId": "tk-synth-3" },
+      { "name": "Filter", "chainId": "tk-synth-7" },
+      { "name": "Master", "chainId": null }
+    ],
+    "description": "Dark techno 16-bar loop template with variation layers and evolution",
+    "notes": [
+      "Start minimal and add elements gradually",
+      "Use automation for evolution within the loop",
+      "Percussion is key — layer multiple elements",
+      "Acid line adds character",
+      "Variation through removal, not just addition"
+    ]
+  }
+]

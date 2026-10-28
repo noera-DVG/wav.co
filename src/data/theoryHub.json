@@ -1,0 +1,53 @@
+{
+  "circleOfFifths": ["C", "G", "D", "A", "E", "B", "F#", "Db", "Ab", "Eb", "Bb", "F"],
+  "scales": [
+    { "name": "Natural Minor", "intervals": [0, 2, 3, 5, 7, 8, 10], "description": "The fundamental minor scale", "edmUseCase": "Base for most minor-key EDM productions" },
+    { "name": "Harmonic Minor", "intervals": [0, 2, 3, 5, 7, 8, 11], "description": "Minor scale with raised 7th", "edmUseCase": "Creates tension for dramatic drops and builds" },
+    { "name": "Dorian", "intervals": [0, 2, 3, 5, 7, 9, 10], "description": "Minor scale with raised 6th", "edmUseCase": "Progressive house and deep techno melodies" },
+    { "name": "Phrygian", "intervals": [0, 1, 3, 5, 7, 8, 10], "description": "Minor scale with flat 2nd", "edmUseCase": "Dark techno and industrial sounds" },
+    { "name": "Mixolydian", "intervals": [0, 2, 4, 5, 7, 9, 10], "description": "Major scale with flat 7th", "edmUseCase": "Uplifting trance and festival progressive" },
+    { "name": "Pentatonic Minor", "intervals": [0, 3, 5, 7, 10], "description": "5-note minor scale", "edmUseCase": "Simple, effective lead melodies" },
+    { "name": "Pentatonic Major", "intervals": [0, 2, 4, 7, 9], "description": "5-note major scale", "edmUseCase": "Bright, uplifting trance leads" },
+    { "name": "Blues", "intervals": [0, 3, 5, 6, 7, 10], "description": "Minor pentatonic with blue note", "edmUseCase": "Gritty techno basslines and leads" },
+    { "name": "Whole Tone", "intervals": [0, 2, 4, 6, 8, 10], "description": "6-note scale with all whole steps", "edmUseCase": "Ambient pads and atmospheric textures" },
+    { "name": "Diminished", "intervals": [0, 1, 3, 4, 6, 7, 9, 10], "description": "Alternating half and whole steps", "edmUseCase": "Tension building and transitional sections" }
+  ],
+  "modalInterchange": [
+    { "from": "Natural Minor", "to": "Dorian", "useCase": "Raise 6th for brighter minor progressions in progressive house" },
+    { "from": "Natural Minor", "to": "Phrygian", "useCase": "Lower 2nd for darker techno atmosphere" },
+    { "from": "Natural Minor", "to": "Harmonic Minor", "useCase": "Raise 7th for dramatic tension before drops" },
+    { "from": "Major", "to": "Mixolydian", "useCase": "Lower 7th for trance energy without full minor feel" },
+    { "from": "Natural Minor", "to": "Aeolian Dominant", "useCase": "Flat 7th in minor for techno grooves" },
+    { "from": "Dorian", "to": "Phrygian Dominant", "useCase": "Exotic sound for trance breakdowns" }
+  ],
+  "tensionMapping": [
+    { "level": 1, "name": "Baseline", "techniques": ["Minimal elements", "Low filter cutoff", "Reduced reverb", "Simple rhythm", "Sub bass only"] },
+    { "level": 2, "name": "Building", "techniques": ["Add percussion layer", "Open filter slightly", "Add hi-hats", "Introduce pad", "Subtle automation"] },
+    { "level": 3, "name": "Rising", "techniques": ["Add bass element", "Increase filter cutoff", "Add reverb send", "White noise rise", "Snare build"] },
+    { "level": 4, "name": "Peak Tension", "techniques": ["Full filter open", "Maximum reverb", "Riser at peak", "Drum roll", "Vocal chop loop"] },
+    { "level": 5, "name": "Release / Drop", "techniques": ["Silence (1 bar)", "Full energy drop", "All elements active", "Maximum loudness", "Lead melody enters"] }
+  ],
+  "chordProgressions": [
+    { "genre": "Progressive House", "name": "Classic Progressive", "chords": ["Am", "F", "C", "G"], "description": "The i-VI-III-VII progression" },
+    { "genre": "Progressive House", "name": "Downtempo Groove", "chords": ["Dm", "Am", "Bb", "F"], "description": "Mellow, rolling progression" },
+    { "genre": "Progressive House", "name": "Melodic Build", "chords": ["F", "C", "G", "Am"], "description": "Ascending tension builder" },
+    { "genre": "Trance", "name": "Uplifting Anthem", "chords": ["G", "D", "Em", "C"], "description": "Classic trance major progression" },
+    { "genre": "Trance", "name": "Emotional Minor", "chords": ["Em", "C", "G", "D"], "description": "Dark but uplifting minor progression" },
+    { "genre": "Trance", "name": "Breakdown Journey", "chords": ["C", "G/B", "Am", "Em/F"], "description": "Descending bassline progression" },
+    { "genre": "Techno", "name": "Dark Loop", "chords": ["Bm", "F#m", "Cm", "Gm"], "description": "Minimal dark techno progression" },
+    { "genre": "Techno", "name": "Industrial", "chords": ["Cm", "Gb", "Db", "Ab"], "description": "Harsh, dissonant techno progression" },
+    { "genre": "Techno", "name": "Hypnotic", "chords": ["Bm", "F#m"], "description": "Two-chord hypnotic loop" }
+  ],
+  "edmKeyPreferences": [
+    { "key": "Am", "genres": ["Progressive House", "Techno"], "notes": "Most popular EDM key; warm and versatile" },
+    { "key": "Gm", "genres": ["Trance", "Progressive House"], "notes": "Trance favorite; emotional and powerful" },
+    { "key": "Dm", "genres": ["Progressive House", "Trance"], "notes": "Bright minor; great for leads" },
+    { "key": "Em", "genres": ["Progressive House", "Trance", "Techno"], "notes": "Deep and dark; works across all genres" },
+    { "key": "Cm", "genres": ["Techno", "Trance"], "notes": "Techno staple; dark and driving" },
+    { "key": "Bm", "genres": ["Techno"], "notes": "Dark techno key; intense and moody" },
+    { "key": "F", "genres": ["Progressive House", "Trance"], "notes": "Bright major; uplifting feel" },
+    { "key": "C", "genres": ["Trance", "Progressive House"], "notes": "Classic major; pure and clean" },
+    { "key": "G", "genres": ["Trance"], "notes": "Uplifting trance; bright and euphoric" },
+    { "key": "F#m", "genres": ["Techno"], "notes": "Dark and intense; techno favorite" }
+  ]
+}

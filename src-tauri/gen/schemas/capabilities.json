@@ -1,0 +1,1 @@
+{"default":{"identifier":"default","description":"Default capability for the WAV.co app","local":true,"permissions":["core:default","shell:allow-open","shell:default"]}}

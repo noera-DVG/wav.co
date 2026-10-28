@@ -1,0 +1,8 @@
+identifier = "default"
+description = "Default capability for the WAV.co app"
+url = ["*"]
+permissions = [
+  "core:default",
+  "shell:allow-open",
+  "shell:default",
+]
