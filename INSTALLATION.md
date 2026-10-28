@@ -1,8 +1,8 @@
 # 📦 Installation Guide
 
-## Quick Start (3 steps)
+## ⚡ Quick Start (3 steps)
 
-1. **Download** `WAV.co-v1.0.0.zip` from [Releases](https://github.com/noera-DVG/wav.co/releases)
+1. **Download** `WAV.co-v1.0.0.zip` from [GitHub Releases](https://github.com/noera-DVG/wav.co/releases)
 2. **Extract** the ZIP file (double-click)
 3. **Move** `WAV.co.app` to your Applications folder
 
@@ -10,36 +10,41 @@ That's it! Double-click to run.
 
 ---
 
-## Detailed Installation Instructions
+## 🎯 Installing WAV.co on macOS
 
-### macOS (Recommended)
+### Method 1: GitHub Releases (Easiest)
 
-#### Option 1: From GitHub Releases (Easiest)
+This is the **recommended method** for all users.
 
-1. Visit [WAV.co Releases](https://github.com/noera-DVG/wav.co/releases)
+1. Visit the [WAV.co Releases Page](https://github.com/noera-DVG/wav.co/releases)
 2. Download the latest release: **WAV.co-v1.0.0.zip**
 3. Double-click the downloaded ZIP file to extract it
 4. Drag `WAV.co.app` from the extracted folder to your **Applications** folder
 5. Open **Applications** and double-click `WAV.co`
 
-> ⚠️ **Security warning?** On first launch, you may see a security warning:
+> ⚠️ **First-time security warning?**
 > 
+> When you first try to open WAV.co, you may see a warning:
+> "WAV.co cannot be opened because the developer cannot be verified."
+> 
+> **Here's how to fix it:**
 > 1. Right-click (or Ctrl-click) `WAV.co.app`
-> 2. Select **Open**
-> 3. Click **Open** in the confirmation dialog
+> 2. Select **Open** from the context menu
+> 3. Click **Open** again in the confirmation dialog
 >
-> This is normal for unsigned applications on macOS.
+> This is normal for unsigned applications on macOS and only happens once.
 
-#### Option 2: Build from Source (For Developers)
+### Method 2: Build from Source (For Developers)
 
-If you want to build WAV.co yourself:
+If you want to compile WAV.co yourself:
 
 ```bash
-# Prerequisites
-brew install rustup
-rustup-init  # accept defaults
+# Install prerequisites
+brew install rustup node
+
+# Set up Rust
+rustup-init  # Accept all defaults
 source "$HOME/.cargo/env"
-brew install node
 
 # Clone and build
 git clone https://github.com/noera-DVG/wav.co.git
@@ -47,7 +52,7 @@ cd wav.co
 npm install
 npm run tauri build
 
-# The app will be at:
+# The app will be built at:
 # src-tauri/target/release/bundle/macos/WAV.co.app
 ```
 
@@ -191,3 +196,5 @@ For issues or questions:
 ---
 
 *WAV.co v1.0.0 — Free and open source under MIT License*
+
+🔗 **GitHub**: [github.com/noera-DVG/wav.co](https://github.com/noera-DVG/wav.co)
